@@ -149,7 +149,6 @@ export default function Footer() {
               // Use anchor tag for new tab
               <a
                 href={link.href}
-                target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block"
                 data-testid={`footer-link-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
@@ -189,7 +188,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('https://twitter.com/yourprofile', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://twitter.com/yourprofile', 'noopener,noreferrer')}
                 className="h-10 w-10 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 hover:scale-110 transition-all duration-300 group"
                 data-testid="button-social-twitter"
               >
@@ -198,7 +197,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('https://www.linkedin.com/company/genorcasx/', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://www.linkedin.com/company/genorcasx/',  'noopener,noreferrer')}
                 className="h-10 w-10 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 hover:scale-110 transition-all duration-300 group"
                 data-testid="button-social-linkedin"
               >
@@ -207,7 +206,7 @@ export default function Footer() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('https://github.com/yourprofile', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://github.com/yourprofile', 'noopener,noreferrer')}
                 className="h-10 w-10 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 hover:scale-110 transition-all duration-300 group"
                 data-testid="button-social-github"
               >

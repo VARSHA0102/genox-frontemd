@@ -52,7 +52,7 @@ export default function Navigation() {
     <a
       key={item.href}
       href={item.href}
-      target="_blank"
+
       rel="noopener noreferrer"
       className={`text-sm font-medium transition-colors hover:text-primary ${
         location === item.href ? 'text-primary' : 'text-muted-foreground'
@@ -86,7 +86,7 @@ export default function Navigation() {
             >
               {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
-            <Button onClick={() => window.open('/tools', '_blank')} data-testid="button-get-started">Get Started</Button>
+            <Button onClick={() => window.open('/tools')} data-testid="button-get-started">Get Started</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -119,7 +119,7 @@ export default function Navigation() {
     <a
       key={item.href}
       href={item.href}
-      target="_blank"
+
       rel="noopener noreferrer"
       className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
         location === item.href

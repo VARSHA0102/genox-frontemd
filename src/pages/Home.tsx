@@ -156,7 +156,6 @@ const experienceYears = currentYear - startYear;
               Source:{' '}
               <a
                 href="https://www.excellentwebworld.com/ai-development-process/"
-                target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-primary"
               >
@@ -228,7 +227,7 @@ At GenOrcasX, we develop advanced Web Applications that merge AI intelligence wi
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" onClick={() => window.open('/consulting', '_blank')} data-testid="button-view-all-services">
+            <Button size="lg" onClick={() => window.open('/consulting')} data-testid="button-view-all-services">
               View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -296,7 +295,7 @@ At GenOrcasX, we develop advanced Web Applications that merge AI intelligence wi
                   <Button size="lg" onClick={() => setLocation('/contact')} className="w-full" data-testid="button-book-consultation">
                     Book Free Consultation
                   </Button>
-                  <Button variant="outline" size="lg" onClick={() => window.open('/tools', '_blank')} className="w-full" data-testid="button-explore-tools-cta">
+                  <Button variant="outline" size="lg" onClick={() => window.open('/tools')} className="w-full" data-testid="button-explore-tools-cta">
                     Explore AI Tools
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
