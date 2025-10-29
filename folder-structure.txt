@@ -1,0 +1,176 @@
++-- attached_assets
+¦   +-- generated_images
+¦   ¦   +-- AI_blog_featured_image_68fe2b91.png
+¦   ¦   +-- AI_dev.jpg
+¦   ¦   +-- AI_tool_suitle.jpg
+¦   ¦   +-- Female_AI_researcher_headshot_57e56034.png
+¦   ¦   +-- gemini_autogen.png
+¦   ¦   +-- genName.png
+¦   ¦   +-- langchain.png
+¦   ¦   +-- logo_genox.png
+¦   ¦   +-- Male_data_scientist_headshot_da570fbb.png
+¦   ¦   +-- Male_engineer_headshot_260d43bc.png
+¦   ¦   +-- Marketing_blog_featured_image_88a4b838.png
+¦   ¦   +-- MVP_blog_featured_image_73ac93ec.png
+¦   ¦   +-- softwareDev.png
+¦   ¦   +-- Tech_AI_hero_background_1a577423.png
+¦   ¦   +-- webApp.jpg
+¦   +-- Pasted-Create-a-modern-responsive-and-visually-stunning-company-website-for-GenOrcasX-an-IT-and-AI-bas-1758955591237_1758955591238.txt
+¦   +-- Pasted-You-are-given-a-task-to-integrate-an-existing-React-component-in-the-codebase-The-codebase-should-1758956633228_1758956633229.txt
++-- dist
+¦   +-- assets
+¦   ¦   +-- AI_dev-CUBAm3Fx.jpg
+¦   ¦   +-- AI_tool_suitle-BXBaTRov.jpg
+¦   ¦   +-- autogen-ai-agents-BL8uGXPG.js
+¦   ¦   +-- autogen-ai-agents-BW55KqRY.png
+¦   ¦   +-- autogen-ai-agents-DnX0lQAt.md
+¦   ¦   +-- autogen-ai-agents-Drm_Ou-V.js
+¦   ¦   +-- autogenBlog_1-BD_7pkrW.png
+¦   ¦   +-- gemini_autogen-C100qZuE.png
+¦   ¦   +-- genName-Cwsh8jcD.png
+¦   ¦   +-- index-8zI65CKO.js
+¦   ¦   +-- index-CnNBqjoh.css
+¦   ¦   +-- langchain-KtKJ62he.png
+¦   ¦   +-- langchain-llm-apps-CiqiRuB-.md
+¦   ¦   +-- langchain-llm-apps-CJhGOLm9.js
+¦   ¦   +-- langchain-llm-apps-L3mv1WJW.js
+¦   ¦   +-- langchain-llm-apps-lUvwuQOl.png
+¦   ¦   +-- logo_genox-YLXo9NLC.png
+¦   ¦   +-- Marketing_blog_featured_image_88a4b838-CHoetOje.png
+¦   ¦   +-- MVP_blog_featured_image_73ac93ec-CsDHmxfL.png
+¦   ¦   +-- softwareDev-0m-Ymg22.png
+¦   ¦   +-- Tech_AI_hero_background_1a577423-CqsdMrYl.png
+¦   ¦   +-- webApp-PNPyBCo7.jpg
+¦   +-- index.html
+¦   +-- test.css
++-- src
+¦   +-- blogs
+¦   ¦   +-- img
+¦   ¦   ¦   +-- autogen-ai-agents.png
+¦   ¦   ¦   +-- langchain-llm-apps.png
+¦   ¦   +-- autogen-ai-agents.md
+¦   ¦   +-- autogenBlog_1.png
+¦   ¦   +-- langchain-llm-apps.md
+¦   +-- components
+¦   ¦   +-- examples
+¦   ¦   ¦   +-- AITool.tsx
+¦   ¦   ¦   +-- BlogCard.tsx
+¦   ¦   ¦   +-- ContactForm.tsx
+¦   ¦   ¦   +-- Footer.tsx
+¦   ¦   ¦   +-- GlassCard.tsx
+¦   ¦   ¦   +-- Hero.tsx
+¦   ¦   ¦   +-- Navigation.tsx
+¦   ¦   ¦   +-- TeamMember.tsx
+¦   ¦   +-- ui
+¦   ¦   ¦   +-- accordion.tsx
+¦   ¦   ¦   +-- alert-dialog.tsx
+¦   ¦   ¦   +-- alert.tsx
+¦   ¦   ¦   +-- aspect-ratio.tsx
+¦   ¦   ¦   +-- avatar.tsx
+¦   ¦   ¦   +-- badge.tsx
+¦   ¦   ¦   +-- breadcrumb.tsx
+¦   ¦   ¦   +-- button.tsx
+¦   ¦   ¦   +-- calendar.tsx
+¦   ¦   ¦   +-- card.tsx
+¦   ¦   ¦   +-- carousel.tsx
+¦   ¦   ¦   +-- chart.tsx
+¦   ¦   ¦   +-- checkbox.tsx
+¦   ¦   ¦   +-- collapsible.tsx
+¦   ¦   ¦   +-- command.tsx
+¦   ¦   ¦   +-- context-menu.tsx
+¦   ¦   ¦   +-- dialog.tsx
+¦   ¦   ¦   +-- drawer.tsx
+¦   ¦   ¦   +-- dropdown-menu.tsx
+¦   ¦   ¦   +-- form.tsx
+¦   ¦   ¦   +-- hover-card.tsx
+¦   ¦   ¦   +-- input-otp.tsx
+¦   ¦   ¦   +-- input.tsx
+¦   ¦   ¦   +-- label.tsx
+¦   ¦   ¦   +-- menubar.tsx
+¦   ¦   ¦   +-- navigation-menu.tsx
+¦   ¦   ¦   +-- pagination.tsx
+¦   ¦   ¦   +-- popover.tsx
+¦   ¦   ¦   +-- progress.tsx
+¦   ¦   ¦   +-- radio-group.tsx
+¦   ¦   ¦   +-- resizable.tsx
+¦   ¦   ¦   +-- scroll-area.tsx
+¦   ¦   ¦   +-- select.tsx
+¦   ¦   ¦   +-- separator.tsx
+¦   ¦   ¦   +-- shape-landing-hero.tsx
+¦   ¦   ¦   +-- sheet.tsx
+¦   ¦   ¦   +-- sidebar.tsx
+¦   ¦   ¦   +-- skeleton.tsx
+¦   ¦   ¦   +-- slider.tsx
+¦   ¦   ¦   +-- switch.tsx
+¦   ¦   ¦   +-- table.tsx
+¦   ¦   ¦   +-- tabs.tsx
+¦   ¦   ¦   +-- textarea.tsx
+¦   ¦   ¦   +-- toast.tsx
+¦   ¦   ¦   +-- toaster.tsx
+¦   ¦   ¦   +-- toggle-group.tsx
+¦   ¦   ¦   +-- toggle.tsx
+¦   ¦   ¦   +-- tooltip.tsx
+¦   ¦   +-- AITool.tsx
+¦   ¦   +-- BlogCard.tsx
+¦   ¦   +-- ContactForm.tsx
+¦   ¦   +-- FeatureShowcase.tsx
+¦   ¦   +-- Footer.tsx
+¦   ¦   +-- GlassCard.tsx
+¦   ¦   +-- Hero.tsx
+¦   ¦   +-- LoadingSpinner.tsx
+¦   ¦   +-- Navigation.tsx
+¦   ¦   +-- ScrollStats.tsx
+¦   ¦   +-- SingleToolInterface.tsx
+¦   ¦   +-- TeamMember.tsx
+¦   ¦   +-- ToolCard.tsx
+¦   +-- hooks
+¦   ¦   +-- use-mobile.tsx
+¦   ¦   +-- use-scroll-restoration.tsx
+¦   ¦   +-- use-theme.tsx
+¦   ¦   +-- use-toast.ts
+¦   +-- lib
+¦   ¦   +-- queryClient.ts
+¦   ¦   +-- utils.ts
+¦   +-- pages
+¦   ¦   +-- blog
+¦   ¦   ¦   +-- autogen-ai-agents.js
+¦   ¦   ¦   +-- BlogPost.tsx
+¦   ¦   +-- tools
+¦   ¦   ¦   +-- AIAssistant.tsx
+¦   ¦   ¦   +-- ChunkingTool.tsx
+¦   ¦   ¦   +-- EmbeddingTool.tsx
+¦   ¦   ¦   +-- EvaluationTool.tsx
+¦   ¦   ¦   +-- RAGTool.tsx
+¦   ¦   ¦   +-- TokenizationTool.tsx
+¦   ¦   +-- About.tsx
+¦   ¦   +-- APIReference.tsx
+¦   ¦   +-- Blog.tsx
+¦   ¦   +-- Careers.tsx
+¦   ¦   +-- Consulting.tsx
+¦   ¦   +-- Contact.tsx
+¦   ¦   +-- CookiePolicy.tsx
+¦   ¦   +-- Development.tsx
+¦   ¦   +-- Documentation.tsx
+¦   ¦   +-- Enterprise.tsx
+¦   ¦   +-- Home.tsx
+¦   ¦   +-- not-found.tsx
+¦   ¦   +-- PrivacyPolicy.tsx
+¦   ¦   +-- Security.tsx
+¦   ¦   +-- Support.tsx
+¦   ¦   +-- Team.tsx
+¦   ¦   +-- Terms.tsx
+¦   ¦   +-- Tools.tsx
+¦   +-- App.tsx
+¦   +-- env.production.example
+¦   +-- index.css
+¦   +-- main.tsx
++-- components.json
++-- index.html
++-- package-lock.json
++-- package.json
++-- postcss.config.cjs
++-- README.md
++-- served-index.css
++-- tailwind.config.ts
++-- tsconfig.json
++-- vite.config.ts
