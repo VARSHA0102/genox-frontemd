@@ -7,14 +7,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: false, // ✅ disables automatic browser launch
-   proxy: process.env.NODE_ENV === 'development' ? {
-    '/api': {
-      target: 'https://genox-backend.onrender.com',
-      changeOrigin: true,
-      secure: true,
-    },
-  } : undefined,
+    open: false,
+    // only enable proxy for local development (Vite dev server)
+    proxy: process.env.NODE_ENV === 'development' ? {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        secure: false,
+      },
+    } : undefined,
   },
   build: {
     outDir: 'dist',

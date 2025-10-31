@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
+import { apiFetch, getApiBaseUrl } from '@/utils/api';
 import {
   Card,
   CardContent,
@@ -132,23 +133,25 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
     setIsLoading(true);
 
     try {
-      let response: Response;
+      let data: any;
       let endpoint = '';
       let formData: FormData | null = null;
+      let fetchOptions: RequestInit = {};
 
       switch (title) {
         case 'Tokenization Tool':
           endpoint = '/api/tools/tokenize';
-          response = await fetch(endpoint, {
+          fetchOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text: inputValues.text }),
-          });
+          };
+          data = await apiFetch(endpoint, fetchOptions);
           break;
 
         case 'Chunking Tool':
           endpoint = '/api/tools/chunk';
-          response = await fetch(endpoint, {
+          fetchOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -156,12 +159,13 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
               chunk_size: parseInt(inputValues.chunk_size as string) || 1000,
               overlap: parseInt(inputValues.overlap as string) || 0,
             }),
-          });
+          };
+          data = await apiFetch(endpoint, fetchOptions);
           break;
 
         case 'AI Assistant':
           endpoint = '/api/tools/chat';
-          response = await fetch(endpoint, {
+          fetchOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -169,12 +173,13 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
               message: inputValues.message,
               model: inputValues.model || 'llama-3.1-8b-instant',
             }),
-          });
+          };
+          data = await apiFetch(endpoint, fetchOptions);
           break;
 
         case 'Embedding Tool':
           endpoint = '/api/tools/embed';
-          response = await fetch(endpoint, {
+          fetchOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -185,12 +190,13 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
                 ? parseInt(inputValues.dimensions as string)
                 : undefined,
             }),
-          });
+          };
+          data = await apiFetch(endpoint, fetchOptions);
           break;
 
         case 'Evaluation Tool':
           endpoint = '/api/tools/evaluate';
-          response = await fetch(endpoint, {
+          fetchOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -198,7 +204,8 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
               ground_truth: inputValues.ground_truth,
               metrics: inputValues.metrics || 'basic',
             }),
-          });
+          };
+          data = await apiFetch(endpoint, fetchOptions);
           break;
 
         case 'RAG Tool':
@@ -212,19 +219,15 @@ const renderColoredTokens = (tokens: Array<{ token: string }>) => {
           if (inputValues.file && inputValues.file instanceof File) {
             formData.append('file', inputValues.file);
           }
-          response = await fetch(endpoint, { method: 'POST', body: formData });
+          data = await apiFetch(endpoint, { method: 'POST', body: formData });
           break;
 
         default:
           throw new Error(`Unknown tool: ${title}`);
       }
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
+      // data is already parsed (JSON or text)
+      if (!data) throw new Error('Empty response from server');
 
       // ✅ Handle results
       if (title === 'Tokenization Tool') {
